@@ -12,8 +12,8 @@ useradd gh -m -s /bin/bash
 
 # Create a folder
 su - gh -c "mkdir actions-runner && cd actions-runner; \
-curl -o actions-runner-linux-x64-2.280.3.tar.gz -L https://github.com/actions/runner/releases/download/v2.280.3/actions-runner-osx-x64-2.280.3.tar.gz; \
-echo '16683d7f180fe2255acb8b5f74142143f8ae9c894f61c51bf0c868199916e8fd  actions-runner-linux-x64-2.280.3.tar.gz' | shasum -a 256 -c; \
+curl -o actions-runner-linux-x64-2.280.3.tar.gz -L https://github.com/actions/runner/releases/download/v2.280.3/actions-runner-linux-x64-2.280.3.tar.gz; \
+echo '69dc323312e3c5547ba1e1cc46c127e2ca8ee7d7037e17ee6965ef6dac3c142b  actions-runner-linux-x64-2.280.3.tar.gz' | shasum -a 256 -c; \
 tar xzf ./actions-runner-linux-x64-2.280.3.tar.gz"
 
 # Configure
