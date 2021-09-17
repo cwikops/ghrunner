@@ -9,6 +9,7 @@ apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_re
 apt update
 apt install packer -y
 
+# Install AZ Cli
 curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 
 # This needs to run as new user
