@@ -1,7 +1,7 @@
 apt update
 DEBIAN_FRONTEND=noninteractive apt install curl jq git-lfs lsb-release software-properties-common -y
-CHECKSUM=aebaaf7c00f467584b921f432f9f9fb50abf06e1b6b226545fbcbdaa65ed3031
-GHR_VERSION=2.283.1
+CHECKSUM=09aa49b96a8cbe75878dfcdc4f6d313e430d9f92b1f4625116b117a21caaba89
+GHR_VERSION=2.283.3
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
